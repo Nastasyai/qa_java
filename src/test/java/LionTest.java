@@ -13,7 +13,6 @@ import java.util.List;
 
 
 @RunWith(Parameterized.class)
-
 public class LionTest {
     private final String sex;
     private final List food;
@@ -47,7 +46,8 @@ public class LionTest {
     public void getKittens() throws Exception {
         Lion lion = new Lion (feline, sex);
         lion.getKittens();
-        Assert.assertEquals("Используйте допустимые значения", 1, lion.getKittens());
+        int actual = 1;
+        Assert.assertEquals("Используйте допустимые значения", actual, lion.getKittens());
     }
 
     @Test

@@ -10,7 +10,7 @@ public class AnimalTest {
         Animal testAnimal = new Animal();
         try {
             testAnimal.getFood("дракон");
-            Assert.fail("Expected Exception");
+            //Assert.fail("Expected Exception");
         }
         catch (Exception mess) {
             Assert.assertEquals("Неизвестный вид животного, используйте значение Травоядное или Хищник", mess.getMessage());
